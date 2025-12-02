@@ -14,7 +14,7 @@ yarn install
    - Get a free API key from [TimeZoneDB](https://timezonedb.com/api)
    - Copy `.env.example` to `.env` and add your API key:
    ```
-   EXPO_PUBLIC_TIMEZONEDB_API_KEY=your_api_key_here
+   TIMEZONEDB_API_KEY=your_api_key_here
    ```
 
 3. Run the app:
