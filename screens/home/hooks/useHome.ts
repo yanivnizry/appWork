@@ -18,7 +18,7 @@ export const useHome = () => {
         let list = await loadTimeZones();
 
         if (!list.length) {
-          list = await fetchTimeZones();
+          list = await fetchTimeZones();          
           if (list.length) {
             await saveTimeZones(list);
           }
@@ -26,7 +26,7 @@ export const useHome = () => {
 
         setTimezones(list);
 
-        const lastSelected = getLastTimezone();
+        const lastSelected = getLastTimezone();        
         if (lastSelected && list.find(tz => tz.id === lastSelected.id)) {
           setSelectedTimezone(lastSelected);
         } else if (list.length) {
